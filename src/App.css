@@ -10,6 +10,25 @@ html {
   scroll-behavior: smooth;
   transition: all 0.3s ease-in-out;
 }
+.title {
+  font-size: 34px;
+}
+p {
+  font-size: 1.2rem;
+}
+/*---------------------------
+      HEADER - Start
+-----------------------------*/
+#header-video {
+  box-sizing: border-box;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.896);
+  background-image: url("https://www.communitybible.com/wp-content/uploads/2023/02/mti_bg_lowOpacity.png");
+}
+.header-video {
+  width: 100%;
+  margin-top: 0;
+}
 /*---------------------------
       SUBNAV - Start
 -----------------------------*/
@@ -55,7 +74,10 @@ html {
 #what strong {
   font-weight: 900;
   font-variant: small-caps;
-  font-size: larger;
+  font-size: 1.3rem;
+}
+.what-para {
+  font-size: 1.1rem;
 }
 /*-----------------------------
  EMPHASIS SECTION - Start 
@@ -90,6 +112,8 @@ html {
 }
 .emphasis-para {
   margin-top: 0;
+  padding: 0 0.5em;
+  font-size: 1.1rem;
   line-height: 1.5em;
   text-align: left;
 }
@@ -108,7 +132,7 @@ html {
   gap: 1em;
 }
 .faq-container {
-  width: 70%;
+  width: 100%;
   max-width: 1200px;
   transform: translateY(0);
   -webkit-box-shadow: 0px 0px 20px #e4e4e4;
@@ -188,15 +212,16 @@ html {
 -----------------------------*/
 #apply {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 1em;
+  gap: 3em;
   height: auto;
+  padding: 3em 1em;
   background-color: var(--main-bg-color);
   color: var(--sec-txt-color);
-  padding: 4em 2em;
 }
 .apply-title {
   color: var(--sec-txt-color);
@@ -204,9 +229,18 @@ html {
 .apply-para {
   margin-top: 0;
   color: var(--sec-txt-color);
+  font-size: 1.1rem;
+}
+.apply-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3em 0;
 }
 .apply-btn {
   border-radius: 30px;
+  margin: 1em;
   border: var(--sec-bg-color) solid 4px;
   padding: 1rem 1.3rem;
   text-decoration: none;
@@ -217,6 +251,39 @@ html {
   color: var(--main-txt-color);
   background-color: var(--sec-bg-color);
   transition: 0.2s ease-in-out;
+}
+.apply-left-container,
+.apply-right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 100%;
+}
+.apply-right-container {
+  max-width: 600px;
+  text-align: center;
+}
+.apply-request-btn {
+  color: var(--tertiary-txt-color);
+}
+.apply-request-btn:hover {
+  color: var(--sec-txt-color);
+}
+.apply-left-container {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 340px;
+}
+.react-player {
+  max-width: 100%;
+  max-height: 100%;
+}
+.react-player div iframe {
+  width: fit-content;
+  height: fit-content;
 }
 /*--------------------------
       MEDIA QUIERIES
@@ -237,9 +304,23 @@ html {
   #emphasis-mti {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     gap: 4em;
     padding-right: 2em;
     padding-left: 2em;
+  }
+  .apply {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  .apply-left-container,
+  .apply-right-container {
+    width: 50%;
+  }
+  .faq-container {
+    width: 100%;
+    max-width: 1000px;
   }
 }
 @media screen and (prefers-reduced-motion: reduce) {

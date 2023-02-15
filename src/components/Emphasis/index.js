@@ -10,10 +10,9 @@ export default function Emphasis() {
           FRAMEWORK
         </h3>
         <p className="emphasis-para">
-          Residents spend most of their time as part of of one of Southeast's
-          ministry teams being developed in their giftedness, learning
-          side-by-side with a Ministry Mentor, gaining hands-on experience, and
-          making an impact in the lives of people.
+          The Bible is our guide and we orient everything we do around God's
+          word. It is reliable and trustworthy and it is foundational to what we
+          do.
         </p>
       </div>
       <div className="emphasis-container">
@@ -23,10 +22,10 @@ export default function Emphasis() {
           FORMATION
         </h3>
         <p className="emphasis-para">
-          Residents spend most of their time as part of of one of Southeast's
-          ministry teams being developed in their giftedness, learning
-          side-by-side with a Ministry Mentor, gaining hands-on experience, and
-          making an impact in the lives of people.
+          We are not called to just "do" ministry. Rather, fruitful ministry is
+          the overflow of a heart connected to the Father. This program seeks to
+          help you grow in your love for Jesus as well as teach you the tools to
+          lead others. Like Paul said, "Follow me as I follow Jesus."
         </p>
       </div>
       <div className="emphasis-container">
@@ -36,10 +35,9 @@ export default function Emphasis() {
           EXPERIENCE
         </h3>
         <p className="emphasis-para">
-          Residents spend most of their time as part of of one of Southeast's
-          ministry teams being developed in their giftedness, learning
-          side-by-side with a Ministry Mentor, gaining hands-on experience, and
-          making an impact in the lives of people.
+          We commit to provide practical training to prepare students to serve
+          in the local church. You will grow alongside of faithful pastors who
+          are leaders in their field. Your involvement will impact people.
         </p>
       </div>
     </div>

@@ -4,6 +4,9 @@ export default function Faq() {
   const [openFaq1, setOpenFaq1] = useState(false);
   const [openFaq2, setOpenFaq2] = useState(false);
   const [openFaq3, setOpenFaq3] = useState(false);
+  const [openFaq4, setOpenFaq4] = useState(false);
+  const [openFaq5, setOpenFaq5] = useState(false);
+  const [openFaq6, setOpenFaq6] = useState(false);
 
   const openToggle1 = () => {
     setOpenFaq1((current) => !current);
@@ -14,10 +17,19 @@ export default function Faq() {
   const openToggle3 = () => {
     setOpenFaq3((current) => !current);
   };
+  const openToggle4 = () => {
+    setOpenFaq4((current) => !current);
+  };
+  const openToggle5 = () => {
+    setOpenFaq5((current) => !current);
+  };
+  const openToggle6 = () => {
+    setOpenFaq6((current) => !current);
+  };
 
   return (
     <div id="faq">
-      <h1>FAQ</h1>
+      <h1 className="title">FAQ</h1>
       <div className="faq-container">
         <div className="faq-question" onClick={openToggle1}>
           <p className="faq-titles">How long is the program?</p>
@@ -31,8 +43,7 @@ export default function Faq() {
         {openFaq1 && (
           <div className="faq-answer">
             <p className="faq-para">
-              215 is a two-year commitment. The program starts in June and ends
-              in May, 24 months later.
+              The Ministry Training Institute is a two-year investment.
             </p>
           </div>
         )}
@@ -40,7 +51,7 @@ export default function Faq() {
 
       <div className="faq-container">
         <div className="faq-question" onClick={openToggle2}>
-          <p className="faq-titles">How long is the program?</p>
+          <p className="faq-titles">Is there an age requirement?</p>
           <img
             src="https://www.communitybible.com/wp-content/uploads/2023/02/chevron-right.png"
             alt="right"
@@ -51,8 +62,7 @@ export default function Faq() {
         {openFaq2 && (
           <div className="faq-answer">
             <p className="faq-para">
-              215 is a two-year commitment. The program starts in June and ends
-              in May, 24 months later.
+              The program is designed for those 20-25 years old.
             </p>
           </div>
         )}
@@ -60,7 +70,7 @@ export default function Faq() {
 
       <div className="faq-container">
         <div className="faq-question" onClick={openToggle3}>
-          <p className="faq-titles">How long is the program?</p>
+          <p className="faq-titles">Are residents paid?</p>
           <img
             src="https://www.communitybible.com/wp-content/uploads/2023/02/chevron-right.png"
             alt="right"
@@ -71,8 +81,67 @@ export default function Faq() {
         {openFaq3 && (
           <div className="faq-answer">
             <p className="faq-para">
-              215 is a two-year commitment. The program starts in June and ends
-              in May, 24 months later.
+              Residents will earn $1200/month and receive free housing with
+              other residents.
+            </p>
+          </div>
+        )}
+      </div>
+      <div className="faq-container">
+        <div className="faq-question" onClick={openToggle4}>
+          <p className="faq-titles">What makes a good candidate?</p>
+          <img
+            src="https://www.communitybible.com/wp-content/uploads/2023/02/chevron-right.png"
+            alt="right"
+            className={openFaq4 ? "chevron-open" : "chevron-collapsed"}
+            width="30px"
+          />
+        </div>
+        {openFaq4 && (
+          <div className="faq-answer">
+            <p className="faq-para">
+              We are looking for people with a clear call to ministry and a
+              passion for God and the local church.
+            </p>
+          </div>
+        )}
+      </div>
+      <div className="faq-container">
+        <div className="faq-question" onClick={openToggle5}>
+          <p className="faq-titles">
+            Will this lead to a full-time job at CBC?
+          </p>
+          <img
+            src="https://www.communitybible.com/wp-content/uploads/2023/02/chevron-right.png"
+            alt="right"
+            className={openFaq5 ? "chevron-open" : "chevron-collapsed"}
+            width="30px"
+          />
+        </div>
+        {openFaq5 && (
+          <div className="faq-answer">
+            <p className="faq-para">
+              We hope so, but can't make that promise. What we do promise is
+              that we will help you find the right ministry role for you.
+            </p>
+          </div>
+        )}
+      </div>
+      <div className="faq-container">
+        <div className="faq-question" onClick={openToggle6}>
+          <p className="faq-titles">How do I apply?</p>
+          <img
+            src="https://www.communitybible.com/wp-content/uploads/2023/02/chevron-right.png"
+            alt="right"
+            className={openFaq6 ? "chevron-open" : "chevron-collapsed"}
+            width="30px"
+          />
+        </div>
+        {openFaq6 && (
+          <div className="faq-answer">
+            <p className="faq-para">
+              Simply fill out the form below and someone from the program will
+              be contacting you soon.
             </p>
           </div>
         )}

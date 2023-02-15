@@ -4,7 +4,7 @@ export default function Provide() {
   return (
     <div id="provide">
       <div className="provide-container-right">
-        <h1>WHAT CBC PROVIDES</h1>
+        <h1 className="title">WHAT CBC PROVIDES</h1>
         <ul>
           <li>
             <span>Pay</span>
@@ -28,7 +28,7 @@ export default function Provide() {
         </ul>
       </div>
       <div className="provide-container-left">
-        <h1>BENEFICIAL EXPERIENCE</h1>
+        <h1 className="title">BENEFICIAL EXPERIENCE</h1>
         <ul>
           <li>
             Develop as a leader through intensive, impactful, experiential
